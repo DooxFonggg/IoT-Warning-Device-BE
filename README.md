@@ -3,8 +3,8 @@
  
  # Run project
 
-  npm init -y
-  npm i express --save 
-  cài morgan: npm i morgan --save-dev
-  cài helmet: npm i helmet --save-dev
+  npm init -y \
+  npm i express --save \ 
+  cài morgan: npm i morgan --save-dev \
+  cài helmet: npm i helmet --save-dev \
   cài compression: npm i compression --save-dev (thư viện giúp tăng tốc độ backend)
