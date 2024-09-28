@@ -1,8 +1,10 @@
-import { initializeApp } from "firebase/app";
-// const firebase = require('firebase');
-const config = require('./config');
+const admin = require("firebase-admin");
+const serviceAccount = require("../key.json");
 
+admin.initializeApp({
+    credential: admin.credential.cert(serviceAccount),
+});
 
-const db = initializeApp(config.firebaseConfig);
+const db = admin.firestore();
 
 module.exports = db;
